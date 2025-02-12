@@ -1,5 +1,5 @@
-import { CartItemVm } from "../components/cart/view-model/cart-item.vm";
-import { ProductItemVm } from "../components/items-list/view-model/product-item.vm";
+import { CartItemVm } from '../components/cart/view-model/cart-item.vm';
+import { ProductItemVm } from '../components/items-list/view-model/product-item.vm';
 
 export interface ProductListVm {
   readonly productItems: ProductItemVm[];

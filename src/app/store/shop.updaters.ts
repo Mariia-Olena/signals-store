@@ -1,7 +1,9 @@
 import { PartialStateUpdater } from '@ngrx/signals';
 import { ShopSlice } from './shop.slice';
 
-export function setSearchWord(searchWord: string): PartialStateUpdater<ShopSlice> {
+export function setSearchWord(
+  searchWord: string
+): PartialStateUpdater<ShopSlice> {
   return () => ({ searchWord });
 }
 

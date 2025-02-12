@@ -5,14 +5,14 @@ import {
   withMethods,
   withState,
 } from '@ngrx/signals';
-import { initialShopeSlice } from './shop.slice';
+import { initialShopSlice } from './shop.slice';
 import { computed } from '@angular/core';
 import { buildCartVm, buildProductListVm } from './shop-vm.builder';
 import * as updaters from './shop.updaters';
 
 export const ShopStore = signalStore(
   { providedIn: 'root' },
-  withState(initialShopeSlice),
+  withState(initialShopSlice),
   withComputed((store) => ({
     productListVm: computed(() =>
       buildProductListVm(
