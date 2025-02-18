@@ -1,4 +1,4 @@
-import { CartItemVm } from '../components/cart/view-model/cart-item.vm';
+import { CartItemVm } from '../features/cart/view-model/cart-item.vm';
 import { Product } from '../models/product.model';
 import { CartVm, ProductListVm } from './shop.vm';
 
